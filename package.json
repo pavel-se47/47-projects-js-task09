@@ -2,10 +2,12 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://pavel-se47.github.io/47-projects-js-vol1-task09",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /47-projects-js-vol1-task09/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,9 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "gh-pages": "^4.0.0",
+    "modern-normalize": "^1.1.0",
+    "parcel-plugin-nuke-dist": "^1.0.1"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
